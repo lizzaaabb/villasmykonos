@@ -1,0 +1,1538 @@
+html, body {
+    height: 100%; /* Ensure html and body take full viewport height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;                                            
+}
+
+.navbar{
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    left: 0; /* Aligns the navbar to the left of the viewport */
+    z-index: 1000; 
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+    position: sticky; /* Fixes the navbar in place */
+} 
+.navelements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+    max-width: 100vw;
+}
+.navelement:nth-child(1){
+    margin-left: 5%;/* Adjust spacing between elements as needed */
+}
+.navelement{
+    margin-left: 18px;
+    max-width: 100vw;
+}
+.navelements a{
+    text-decoration: none;
+    font-size: 1.06rem;
+    color: #707070;
+    transition: 0.2s ease;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+.navelements a:hover{
+    color:#ebb479;
+}
+
+.contact {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    margin-left: auto;
+    margin-right: 5%;
+    gap: 10px;
+}
+.phone{
+    height: 23px;
+    cursor: pointer;
+}
+.menu{
+    height: 40px;
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+
+
+.next{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+}
+.landing-page{
+    background-color:rgb(236, 233, 228);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    background-image: url(pics/villa3.jpg);
+    background-color: #ece9e4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4.5%;
+}
+
+.landing-span{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .05em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+.landing-title{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+}
+.landing-p{
+    font-size: 20px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #fff;
+}
+.seemore{
+    width: 125px;
+    height: 125px;
+    background-color: #fbe0a9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.seemore:hover{
+    background-color: #ebb479;
+}
+.seemore:hover p {
+    color: #fff;
+}
+.seemore p{
+    color: #707070;
+    font-size: 1.05rem;
+    transition: 0.4s ease;
+}
+.seemore a{
+    text-decoration: none;
+    margin-bottom: -14%;
+}
+#arrow{
+    height: 45px;
+    fill: #707070;
+    transition: 0.4s ease;
+}
+.seemore:hover #arrow{
+    fill: #fff !important;
+}
+
+
+.hero1-title{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    margin: 0;
+}
+.hero1-span{
+    font-size: 19px;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #707070;
+}
+.hero2-p{
+    font-size: 17px;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #707070;
+
+}
+.info-container{
+    align-items: center;
+    justify-content: space-between; /* Adjust to space-between to align items to the left and right */
+    width: 100%; /* Ensure it takes up the full width of the parent */
+    display: flex;
+}
+.hero1 {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (left) within the column */
+    flex-direction: column;
+    margin-right: auto; /* Pushes the hero1 content to the left */
+    margin-left: 5%;
+    flex: 0 0 30%;
+}
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    flex: 0 0 70%;
+    margin-top: 6.6%;
+}
+.hero2-btn{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+    margin-top: 1.7%;
+}
+.hero2-btn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+.landing2{
+    background-color: #ece9e4;
+    padding-bottom: 5%;
+    margin-top: 0%;
+}
+.listimg{
+    height: 40px;
+}
+.list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+    background-color: #ece9e4;
+}
+.list1, .list2 {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (left) */
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.listitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+}
+.listinfo{
+    font-size: 1.1rem;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #707070;
+}
+
+.villaimg1, .villaimg2{
+    height: 670px;
+}
+.villas{
+    background-color: #ece9e4;
+    padding-top: 10%;
+}
+.villa1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infocontainer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+}
+
+
+.villa2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -7%;
+}
+.villatitle1{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    text-transform: uppercase;
+}
+.villainfo1{
+    font-size: 1.1rem;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #707070;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.villabtn{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+    margin-top: 2%;
+}
+.villabtn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+.feature img{
+    height: 40px;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 6%;
+}
+
+.features1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.feature span{
+    width: 140px;
+    color: #707070;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.villa2 .infocontainer1{
+    margin-top: 1%;
+
+}
+
+.slider-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 8%;
+    padding-bottom: 0 !important;
+    background-color: #ece9e4;
+    box-sizing: border-box;
+}
+.slidertitle{
+    padding-bottom: 6%;
+}
+.slidertitle p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #707070;
+    letter-spacing: .04em;
+    line-height: 1.5;
+}
+.sliderimg{
+    width: 100%;
+    padding: 0;
+}
+.mySlides{
+    display: none;
+}
+.slideshow-container{
+    position: relative;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 21px; /* Set a fixed width */
+    height: 21px; /* Set a fixed height */
+    padding: 19px;
+    color: #fff;
+    background-color: #ADB8A2;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.prev {
+    left: 0;
+}
+.prev:hover{
+    background-color: #EBB479;
+}
+
+.next {
+    right: 0;
+}
+.next:hover{
+    background-color: #EBB479;
+}
+.numbertext{
+    color: #fff;
+    font-size: 1.08rem;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    border: 0.6px solid #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.whyus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ece9e4;
+    margin-top: 0;
+    padding-bottom: 4%;
+}
+.whycontainer1, .whycontainer1 h2, .whycontainer1 .whyp {
+    text-align: left;
+    margin-left: 3%;
+}
+.whycontainer1 h2{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    margin-bottom: 0;
+}
+.whyp{
+    font-size: 19px;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #707070;
+    margin-top: 0.5%;
+}
+.whycontainer1 {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    justify-content: flex-start; /* Align content to the start */
+    flex-direction: column;
+    width: 100%;
+}
+.whycontainer2{
+    display: flex;
+    align-items: flex-start;  
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+}
+.whyinfo{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;              /* Use Flexbox to layout children */
+    align-items: flex-start;     /* Align children at the start of the container */
+    margin-bottom: 20px;  
+}
+.whyinfo h5{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #707070;
+    font-weight: 400;
+}
+.whyinfo p{
+    font-size: 1.06rem;
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+.whyimg{
+    width: 40px;
+    height: auto;
+}
+.whyicon {
+    display: flex;
+    align-items: center;             /* Center the image vertically within the .whyicon container */
+    margin-right: 20px; 
+    margin-top: 23px;             /* Space between icon and text */
+}
+.infowhy {
+    flex: 1;                         /* Allow text container to take the remaining space */
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.imagecontainer{
+    height: 560px;
+    width: 810px;
+    background-image: url(pics/about1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.textcontent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 4%;
+}
+.textheading h2{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.textp p{
+    font-size: 1.05rem;
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+.textbutton button{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+}
+.textbutton{
+    margin-top: 3%;
+}
+.textbtn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+
+.about2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.imagecontainer2{
+    height: 560px;
+    width: 810px;
+    background-image: url(pics/about2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.textcontent2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 4%;
+}
+.textheading2 h2{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.textp2 p{
+    font-size: 1.05rem;
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+
+
+.textbutton2 button{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+}
+.textbutton2{
+    margin-top: 3%;
+}
+.textbtn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 7%;
+}
+.footercontainer2{
+    height: 560px;
+    width: 810px;
+    background-color: #bfceb1;
+
+}
+.footercontainer1{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; 
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerheader h3{
+    font-family: Boowie;
+    font-size: 54px;
+    color: #ADB8A2;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.footerheader{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footertext{
+    margin-top: -15%;
+    padding-top: 0;
+}
+.footertext p{
+    font-size: 1rem;
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+.footertext p:nth-child(1){
+    font-weight: 500;
+}
+.footerbtn{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+
+}
+.footerbutton{
+    margin-top: 5%;
+}
+.footerbtn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+.gmailicon{
+    height: 50px;
+    cursor: pointer;
+}
+.fbicon{
+    height: 50px;
+    cursor: pointer;
+}
+
+.footercontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footerinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10%;
+    gap: 230px;
+
+}
+.gmail p{
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: .04em;
+    line-height: 1.3;
+    color: #707070;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.address p:nth-child(1){
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: .04em;
+    line-height: 1.3;
+    color: #707070;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.address p:nth-child(1):hover{
+    color: #fff;
+}
+.address p:nth-child(2){
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .03em;
+    line-height: 1.3;
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: -9px;
+}
+.address p:nth-child(2):hover{
+    text-decoration: underline;
+}
+.address{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.gmail p:hover{
+    color: #fff;
+}
+.inforight p{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .03em;
+    line-height: 1.8;
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: -9px;
+}
+.footerbottom{
+    font-weight: 300;
+    font-size: 15px;
+    color: #707070;
+    opacity: 0.8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.footerbottom:hover{
+    color: #fff;
+}
+
+
+.contactform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start; /* Aligns items to the start (left) */
+    max-width: 800px;
+    margin-left: 0; /* Aligns the form to the left */
+    margin-right: auto; /* This could be optional depending on your layout needs */
+    margin-top: 20px; /* Add some top margin if needed */
+}
+.contact-details, .contact-message {
+    display: flex;
+    flex-direction: column; /* Stacks labels and inputs vertically */
+    min-width: 300px; /* Ensures a minimum width for form sections */
+}
+.contactus2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.contactitle2{
+    font-family: Boowie;
+    font-size: 54px;
+    color: #ADB8A2;
+    letter-spacing: .04em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contactp{
+    font-size: 18px;
+    letter-spacing: .04em;
+    line-height: 1.4;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #707070;
+    opacity: 0.8;
+}
+label{
+    font-size: 18px;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: .03em;
+    color: #707070;
+}
+.input, .emailinput{
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: .04em;
+    line-height: 40px;
+    padding: 0px 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ADB8A2;
+    font-family: Poppins;
+    font-weight: 300;
+    color: #707070;
+    border-radius: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+#message{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: .04em;
+    line-height: 10px;
+    padding: 0px 20px;
+    border: none;
+    border-bottom: 1px solid #ADB8A2;
+    color: #707070;
+    outline: none;
+    margin-bottom: 20px;
+    
+}
+
+.contact-message{
+    margin-left: 30px;
+}
+.consent{
+    font-size: 0.9rem !important;
+    color: #707070;
+    opacity: 0.9;
+}
+.checkbox a{
+    color: #EBB479;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1%;
+    margin-left: 30px;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+    align-self: center; /* Optional */
+    height: 24px;
+    width: 24px;
+  }
+  .checkbox input[type="checkbox"] {
+    opacity: 0;
+    pointer-events: none;
+}
+.checkbox input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #bfceb1; /* Your desired green color */
+}  
+.sendbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62%;
+    margin-top: 3%;
+}
+.submit-button{
+    padding: 17px 35px;
+    border: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    -webkit-transition: ease-in-out .3s all;
+    -o-transition: ease-in-out .3s all;
+    -moz-transition: ease-in-out .3s all;
+    transition: ease-in-out .3s all;
+    
+}
+.submit-button:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+
+@media (max-width: 430px) {
+    .navelements{
+        display: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 18px;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; /* Ensure it's positioned relative to the viewport */
+        top: 10px; /* Adjust the distance from the top of the viewport */
+        right: 10px; /* Adjust the distance from the right of the viewport */
+        width: 50px; /* Set a fixed width */
+        height: 50px; /* Set a fixed height */
+        background-color: transparent; /* Optional: background color for visibility */
+        z-index: 1001; /* Ensure it is above other elements */
+    }
+    .menu{
+        display: flex;
+        padding: 20px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 70px;
+        position: fixed;
+        left: 0; /* Aligns the navbar to the left of the viewport */
+        width: 100%; /* Ensures the navbar spans the full width of the viewport */
+        background-color: white; /* Optional: Adds a background color to ensure readability */
+        z-index: 1000; 
+        top: 0; /* Aligns the navbar to the top of the viewport */
+    }
+    .slideshow-container {
+        position: relative; /* Ensure it's relative to its container */
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+        z-index: 1; /* Ensure it's behind the sidebar */
+    }
+
+    .slideshow-container.slide-out {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .slideshow-container.slide-in {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .slideshow-container.hidden {
+        display: none; /* Hide the slideshow container when it has the 'hidden' class */
+    }
+    .slider-section{
+        z-index: 1;
+    }
+
+    #sidebar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: white; /* Background color for the sidebar */
+        position: fixed; 
+        transition: transform 0.3s ease, display 0s 0.3s; 
+        transform: translateX(-100%);
+    }
+    #sidebar.show{
+        display: flex;
+        transform: translate(0);
+    }
+    .sidebar a{
+        text-decoration: none;
+        font-size: 1.06rem;
+        color: #707070;
+        transition: 0.2s ease;
+        font-weight: 300;
+        letter-spacing: 0.03em;
+    }
+    .sidebar a:hover{
+        color:#ebb479;
+    }
+    .sidebar-items{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 55px;
+        flex-direction: column;
+    }
+    .seemore{
+        width: 115px;
+        height: 115px;
+    }
+    .landing-span{
+        font-size: 14px;
+    }
+    .landing-title{
+        font-size: 50px;
+    }
+    .landing-p{
+        font-size: 18px;
+        letter-spacing: .04em;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #fff;
+    }
+    .landing-page{
+        margin-top: 0%;
+    }
+
+    .info-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Adjust to space-between to align items to the left and right */
+        width: 100%;
+        text-align: center; 
+        margin-top: 0%;
+        padding-top: 15%;
+    }
+    .hero1 {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Align items to the start (left) within the column */
+        flex-direction: column;
+        margin-right: auto; /* Pushes the hero1 content to the left */
+        flex: 1 1 auto; /* Reset flex to auto for both elements */
+        margin: 0; /* Reset margins */
+        width: 100%;
+    }
+    .hero2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; /* Align items to the start (left) */
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 4.5%;
+    }
+    .hero1-title{
+        font-size: 41px;
+    }
+    .hero1-span{
+        font-size: 16px;
+    }
+    .list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        background-color: #ece9e4;
+        padding-top: 15%;
+    }
+    .list1, .list2{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .listimg{
+        height: 30px;
+    }
+    .listinfo{
+        font-size: 0.9rem;
+        letter-spacing: .04em;
+        line-height: 1.3;
+    }
+    .feature span{
+        width: 97px;
+        color: #707070;
+        letter-spacing: .03em;
+        font-size: 0.9rem;
+    }
+    .feature{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 6%;
+    }
+    .features1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .villainfo1{
+        font-size: 1rem;
+        margin-top: -5%;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6%;
+    }
+    .villaimg1, .villaimg2{
+        display: none;
+    }
+    .villa1, .villa2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phoneimg{
+        background-image: url(pics/Spetses__0084.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        padding-top: 10%;
+    }
+    .villabtn{
+        margin-bottom: 45%;
+    }
+    .phoneimg2{
+        background-image: url(pics/Spetses__0077.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        padding-top: 10%;
+    }
+    .villatitle1, .villatitle2{
+        font-size: 41px;
+    }
+    .landing-page{
+        background-image: url(pics/villa3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .numbertext{
+        color: #fff;
+        font-size: 0.7rem;
+        padding: 10px;
+        top: 0;
+        border: 0.6px solid #fff;
+        border-radius: 50%;
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .prev, .next{
+        top: 50%;
+        width: 10px; /* Set a fixed width */
+        height: 15px; /* Set a fixed height */
+        padding: 10px;
+        font-size: 1.2rem;
+        background-color: transparent;
+    }
+    .slidertitle p{
+        font-size: 1.05rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .whycontainer2{
+        display: flex;
+        align-items: flex-start;  
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        gap: 0px;
+        margin-top: 0%;
+    }
+    .whyinfo{
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;              /* Use Flexbox to layout children */
+        align-items: flex-start;     /* Align children at the start of the container */
+        margin-bottom: 5px;  
+    }
+
+    .whyinfo h5{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .whyinfo p{
+        font-size: 0.9rem;
+    }
+    .whyimg{
+        width: 35px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .whyicon {
+        display: flex;
+        align-items: center;             /* Center the image vertically within the .whyicon container */
+        margin-right: 20px; 
+        margin-top: 23px;             /* Space between icon and text */
+    }
+
+    .whycontainer1 h2{
+        font-size: 45px;
+        text-align: left !important;
+        margin-bottom: 3%;
+    }
+    .whyp{
+        font-size: 1rem;
+        margin-top: 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .whycontainer1 {
+        display: flex;
+        align-items: flex-start; /* Align items to the start */
+        justify-content: center; /* Align content to the start */
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .whyus{
+        margin-top: -15%;
+        padding-top: 0;
+        padding-bottom: 8%;
+    }
+
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse !important;
+    }
+    .imagecontainer {
+        height: 300px; /* Set a fixed height for the image */
+        width: 100%;
+        background-image: url('pics/about1.jpg'); /* Ensure the URL is correct and wrapped in quotes */
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .textcontent{
+        margin-left: 0%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textheading h2{
+        font-size: 35px;
+    }
+    .textp p{
+        font-size: 1rem;
+        color: #707070;
+        font-weight: 300;
+        letter-spacing: .05em;
+    }
+    .textbutton{
+        margin-top: 3%;
+        margin-bottom: 14%;
+    }
+    .textbutton button{
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+    .about2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+    }
+    .imagecontainer2 {
+        height: 300px; /* Set a fixed height for the image */
+        width: 100%;
+        background-image: url('pics/about2.jpg'); /* Ensure the URL is correct and wrapped in quotes */
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .textcontent2{
+        margin-right: 0%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textheading2 h2{
+        font-size: 35px;
+    }
+    .textp2 p{
+        font-size: 1rem;
+        color: #707070;
+        font-weight: 300;
+        letter-spacing: .05em;
+    }
+    .textbutton2{
+        margin-top: 3%;
+        margin-bottom: 14%;
+    }
+    .textbutton2 button{
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15%;
+    }
+    .footercontainer2{
+        height: auto;
+        width: 100%;    
+    }
+    .footercontainer1{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    .footercontainer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        padding: 20px; /* Optional: add padding for spacing */
+    }
+    
+    .footerinfo {
+        display: flex;
+        flex-direction: column; /* Ensure vertical stacking */
+        align-items: flex-start; /* Align content to the left */
+        text-align: left; /* Align text to the left */
+        margin-top: 10%;
+        gap: 0px; /* Space between child elements */
+        margin-left: 4%;
+    }
+    
+    .infoleft,
+    .inforight {
+        width: 100%; /* Ensure full width for left alignment */
+    }
+    .footerheader h3{
+        font-size: 35px;
+        margin-bottom: 8%;
+    }
+    .footertext{
+        margin-top: 0%;
+    }
+    .footertext p{
+        font-size: 0.95rem;
+    }
+    .footerbtn{
+        padding: 12px 28px;
+        font-size: 14px;
+    
+    }
+    .infoleft{
+        display: none;
+    }
+    .footerbottom p{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9rem;
+        margin-top: 5%;
+    }
+    .footerbottom{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+
+    .contactitle2{
+        font-size: 35px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactp{
+        font-size: 16px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    label{
+        font-size: 16px;
+    }
+    .contact-message{
+        margin-left: 0 !important;
+    }
+    .input, .emailinput, .messageinput{
+        width: 230px;
+    }
+    textarea{
+        width: 240px;
+    }
+    .contactform{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .checkbox {
+        flex-wrap: wrap;
+        margin-left: 0;
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .checkbox input[type="checkbox"] {
+        margin-right: 5px;
+        vertical-align: middle;
+        align-self: center; /* Optional */
+        height: 20px;
+        width: 20px;
+      }
+    .checkbox input[type="checkbox"] + label::before {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .sendbutton{
+        justify-content: flex-start;
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6%;
+    }
+    .submit-button{
+        padding: 15px 30px;
+        font-size: 14px; 
+    }
+    .consent{
+        line-height: 1.6;
+    }
+    
+    
+    
+
+    
+
+}
+
